@@ -218,11 +218,6 @@ public final class DefaultCustomizationSections implements CustomizationSections
                                 lifecycleOwner,
                                 /* isRevampedUiEnabled= */ true));
 
-                // Icon pack selection section.
-                sectionControllers.add(new IconPackSectionController(
-                        IconPackManager.getInstance(activity, new OverlayManagerCompat(activity)),
-                        sectionNavigationController));
-
                 // Font selection section.
                 sectionControllers.add(new FontSectionController(
                         FontManager.getInstance(activity, new OverlayManagerCompat(activity)),
